@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="shortcut icon" href="public/img/icon.png" type="image/png">
+	<title>!task</title>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="logo">
+			    <h1><span>!</span>task</h1>
+		    </div>
+		    <nav>
+			    <div class="top-nav" id="nav">
+				     
+				     <ul>
+				         <li><a href="#maine">Главная</a></li>
+				         <li><a href="#project">Проект</a></li>
+				         <li><a href="#about">О нас</a></li>
+				         <li><a href="#contacts">Контакты</a></li>
+				         <li><a href="#" class="enter popup-btn">Вход</a></li>
+			         </ul>
+			         <a href="#" id="title" class="icon"><p>&#9776;</p></a>
+			     </div>
+		     </nav>
+		</div>
+	</header>
+	<main>
+		<div class="main-header parallax--bg" id="maine">
+			<div class="shadow">
+			<div class="wrapper">
+				<h2><span>!</span>task</h2>
+				<h3>Помогаем помогать</h3>
+                <p><%= data.firstname %>, Спасибо что вы с нами! </p> <br>
+                
+			<div class="main-links">
+			     <div class="link">
+				     <a href="#">Скачать для iOS</a>
+			     </div>
+			     <div class="link">
+				     <a href="#">Скачать для  Android</a>
+			     </div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="wrapper-footer">
+			<p>2018 <strong><span>!</span>task</strong> Help to help</p>
+			<div class="footer-nav">
+				<ul>
+				         <li><a href="./task.ejs#maine">Главная</a></li>
+				         <li><a href="./task.ejs#about">О нас</a></li>
+				         <li><a href="./task.ejs#project">Проект</a></li>
+				         <li><a href="./task.ejs#contacts">Контакты</a></li>
+			         </ul>
+			</div>
+			<div class="footer-links">
+				<ul>
+					<li><a href="#"><i class="fab fa-vk"></i></a></li>
+					<li><a href="#"><i class="fab fa-telegram"></i></a></li>
+					<li><a href="https://github.com/prazd/TaskSite"><i class="fab fa-github"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+				</ul>
+			
+			</div>
+		</div>
+	</footer>
+
+<!-- Модальное окно-->
+<div class="popup">
+	<div class="popup-dialog">
+		<div class="popup-content">
+			<button class="popup-close">&times;</button>
+			<h4 class="popup-header">Вход</h4>
+			<form action="#" class="popup-form" >
+				<input class="popup-form-btn" type="text" placeholder="Логин">
+				<input class="popup-form-btn" type="password" placeholder="Пароль">
+				<button class="popup-form-btn login-btn" type="submit">Войти</button>
+			</form>
+			<a href="#">Забыли пароль?</a>
+			<p>Еще не зарегистрированы?</p>
+			<a href="reg.html"><button class="login-btn reg-btn"> Зарегистрироваться</button></a>
+
+		</div>
+	</div>
+</div>
+
+
+
+    <script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+	<script src="public/js/script.js"></script>
+</body>
+</html>
